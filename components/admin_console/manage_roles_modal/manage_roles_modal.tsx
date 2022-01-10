@@ -12,6 +12,7 @@ import {ActionResult} from 'mattermost-redux/types/actions';
 import {UserProfile} from 'mattermost-redux/types/users';
 import * as UserUtils from 'mattermost-redux/utils/user_utils';
 
+import {TelemetryCategories} from 'utils/constants';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 
 import FormattedMarkdownMessage from 'components/formatted_markdown_message.jsx';

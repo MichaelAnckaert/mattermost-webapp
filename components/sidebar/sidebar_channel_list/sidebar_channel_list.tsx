@@ -17,7 +17,7 @@ import {Team} from 'mattermost-redux/types/teams';
 
 import {trackEvent} from 'actions/telemetry_actions';
 import {DraggingState} from 'types/store';
-import {Constants, DraggingStates, DraggingStateTypes} from 'utils/constants';
+import {Constants, DraggingStates, DraggingStateTypes, TelemetryCategories} from 'utils/constants';
 import * as Utils from 'utils/utils';
 import * as ChannelUtils from 'utils/channel_utils.jsx';
 

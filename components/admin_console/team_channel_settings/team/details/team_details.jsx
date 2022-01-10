@@ -20,12 +20,12 @@ import {NeedDomainsError, NeedGroupsError, UsersWillBeRemovedError} from '../../
 
 import SaveChangesPanel from '../../save_changes_panel';
 
+import {TelemetryCategories} from 'utils/constants';
+
 import {TeamProfile} from './team_profile';
 import {TeamModes} from './team_modes';
 import {TeamGroups} from './team_groups';
 import TeamMembers from './team_members/index';
-
-import {TelemetryCategories} from 'utils/constants';
 
 export default class TeamDetails extends React.PureComponent {
     static propTypes = {

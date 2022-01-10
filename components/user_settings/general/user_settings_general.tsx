@@ -17,7 +17,7 @@ import SettingItemMax from 'components/setting_item_max.jsx';
 import SettingItemMin from 'components/setting_item_min';
 import SettingPicture from 'components/setting_picture.jsx';
 import LoadingWrapper from 'components/widgets/loading/loading_wrapper';
-import {AnnouncementBarMessages, AnnouncementBarTypes, AcceptedProfileImageTypes, Constants, ValidationErrors} from 'utils/constants';
+import {AnnouncementBarMessages, AnnouncementBarTypes, AcceptedProfileImageTypes, Constants, ValidationErrors, TelemetryCategories} from 'utils/constants';
 
 const holders = defineMessages({
     usernameReserved: {

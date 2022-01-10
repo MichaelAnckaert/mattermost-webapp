@@ -3,18 +3,18 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import {Tooltip} from 'react-bootstrap';
 import IconButton from '@mattermost/compass-components/components/icon-button';
 
 import {trackEvent} from 'actions/telemetry_actions';
 import * as Utils from 'utils/utils';
 import {browserHistory} from 'utils/browser_history';
-import Constants from 'utils/constants';
+import Constants, {TelemetryCategories} from 'utils/constants';
 import KeyboardShortcutSequence, {
     KEYBOARD_SHORTCUTS,
     KeyboardShortcutDescriptor,
 } from 'components/keyboard_shortcuts/keyboard_shortcuts_sequence';
 import OverlayTrigger from 'components/overlay_trigger';
+import Tooltip from 'components/tooltip';
 
 const HistoryButtonsContainer = styled.nav`
     display: flex;

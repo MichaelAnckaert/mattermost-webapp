@@ -3,6 +3,7 @@
 
 import React from 'react';
 
+import {TelemetryCategories} from 'utils/constants';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 import Markdown from 'components/markdown';
 

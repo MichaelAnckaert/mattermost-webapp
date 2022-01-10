@@ -19,7 +19,7 @@ import EditCategoryModal from 'components/edit_category_modal';
 import Menu from 'components/widgets/menu/menu';
 import {getCategoriesForCurrentTeam, getDisplayedChannels} from 'selectors/views/channel_sidebar';
 import {GlobalState} from 'types/store';
-import Constants, {ModalIdentifiers} from 'utils/constants';
+import Constants, {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 
 type Props = {
     channel: Channel;

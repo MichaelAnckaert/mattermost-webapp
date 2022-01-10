@@ -3,6 +3,7 @@
 import {AdminTypes} from 'mattermost-redux/action_types';
 import {General} from '../constants';
 import {Client4} from 'mattermost-redux/client';
+import {TelemetryCategories} from 'utils/constants';
 
 import {Action, ActionFunc, batchActions, DispatchFunc, GetStateFunc} from 'mattermost-redux/types/actions';
 import {Compliance} from 'mattermost-redux/types/compliance';
@@ -589,6 +590,8 @@ export function removePlugin(pluginId: string): ActionFunc {
         dispatch(batchActions([
             {type: AdminTypes.REMOVE_PLUGIN_SUCCESS, data: null},
             {type: AdminTypes.REMOVED_PLUGIN, data: pluginId},
+            {type: AdminTypes.DISABLE_PLUGIN_SUCCESS, data: null},
+            {type: AdminTypes.DISABLED_PLUGIN, data: pluginId},
         ]));
 
         return {data: true};

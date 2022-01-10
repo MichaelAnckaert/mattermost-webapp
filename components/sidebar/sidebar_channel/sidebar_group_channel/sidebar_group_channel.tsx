@@ -8,7 +8,7 @@ import {PreferenceType} from 'mattermost-redux/types/preferences';
 
 import {trackEvent} from 'actions/telemetry_actions';
 import {browserHistory} from 'utils/browser_history';
-import Constants from 'utils/constants';
+import Constants, {TelemetryCategories} from 'utils/constants';
 
 import SidebarChannelLink from 'components/sidebar/sidebar_channel/sidebar_channel_link';
 

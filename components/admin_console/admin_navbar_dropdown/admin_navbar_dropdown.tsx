@@ -10,7 +10,7 @@ import * as GlobalActions from 'actions/global_actions';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 
 import {filterAndSortTeamsByDisplayName} from 'utils/team_utils.jsx';
-import {ModalIdentifiers} from 'utils/constants';
+import {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 import {t} from 'utils/i18n';
 
 import AboutBuildModal from 'components/about_build_modal';

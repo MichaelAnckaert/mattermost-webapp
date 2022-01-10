@@ -7,6 +7,7 @@ import {FormattedMessage} from 'react-intl';
 import {ProductNotices, ProductNotice} from 'mattermost-redux/types/product_notices';
 import {WebsocketStatus} from 'mattermost-redux/types/websocket';
 
+import {TelemetryCategories} from 'utils/constants';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 
 import Markdown from 'components/markdown';
@@ -258,8 +259,7 @@ export default class ProductNoticesModal extends React.PureComponent<Props, Stat
 
         return (
             <GenericModal
-                show={true}
-                onHide={this.onModalDismiss}
+                onExited={this.onModalDismiss}
                 handleConfirm={this.handleNextButton}
                 handleCancel={handlePreviousButton}
                 modalHeaderText={(

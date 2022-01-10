@@ -3,6 +3,7 @@
 
 import * as Redux from 'redux';
 
+import {TelemetryCategories} from 'utils/constants';
 import {ChannelTypes, PreferenceTypes, UserTypes} from 'mattermost-redux/action_types';
 
 import {Client4} from 'mattermost-redux/client';

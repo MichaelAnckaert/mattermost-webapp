@@ -8,7 +8,6 @@ import {Tabs, Tab, SelectCallback} from 'react-bootstrap';
 
 import {PluginStatusRedux} from 'mattermost-redux/types/plugins';
 import type {MarketplaceApp, MarketplacePlugin} from 'mattermost-redux/types/marketplace';
-import {Dictionary} from 'mattermost-redux/types/utilities';
 
 import FullScreenModal from 'components/widgets/modals/full_screen_modal';
 import RootPortal from 'components/root_portal';
@@ -21,6 +20,7 @@ import FormattedMarkdownMessage from 'components/formatted_markdown_message.jsx'
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 import {t} from 'utils/i18n';
 import {localizeMessage} from 'utils/utils';
+import {TelemetryCategories} from 'utils/constants';
 
 import './marketplace_modal.scss';
 import MarketplaceList from './marketplace_list/marketplace_list';
@@ -96,7 +96,7 @@ export type MarketplaceModalProps = {
     listing: Array<MarketplacePlugin | MarketplaceApp>;
     installedListing: Array<MarketplacePlugin | MarketplaceApp>;
     siteURL: string;
-    pluginStatuses?: Dictionary<PluginStatusRedux>;
+    pluginStatuses?: Record<string, PluginStatusRedux>;
     firstAdminVisitMarketplaceStatus: boolean;
     actions: {
         closeModal: () => void;
@@ -114,8 +114,8 @@ type MarketplaceModalState = {
 };
 
 // MarketplaceModal is the marketplace modal.
-export class MarketplaceModal extends React.PureComponent<MarketplaceModalProps, MarketplaceModalState> {
-    private filterRef: React.RefObject<QuickInput>;
+export default class MarketplaceModal extends React.PureComponent<MarketplaceModalProps, MarketplaceModalState> {
+    private filterRef: React.RefObject<HTMLInputElement>;
 
     constructor(props: MarketplaceModalProps) {
         super(props);
