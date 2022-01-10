@@ -1731,6 +1731,7 @@ export const durationValues = {
 };
 
 export const TelemetryCategories = {
+    ACTION: 'action',
     ACTIONS: 'actions',
     ADMIN: 'admin',
     ADMIN_CHANNELS_PAGE: 'admin_channels_page',

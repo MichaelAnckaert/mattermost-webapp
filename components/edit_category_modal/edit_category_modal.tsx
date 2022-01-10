@@ -8,6 +8,7 @@ import {ChannelCategory} from 'mattermost-redux/types/channel_categories';
 
 import {trackEvent} from 'actions/telemetry_actions';
 import QuickInput, {MaxLengthInput} from 'components/quick_input';
+import {TelemetryCategories} from 'utils/constants';
 import {localizeMessage} from 'utils/utils';
 
 import '../category_modal.scss';

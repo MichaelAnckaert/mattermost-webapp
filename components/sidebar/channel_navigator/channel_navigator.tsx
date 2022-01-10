@@ -12,7 +12,7 @@ import QuickSwitchModal from 'components/quick_switch_modal';
 
 import {ModalData} from 'types/actions';
 
-import Constants, {ModalIdentifiers} from 'utils/constants';
+import Constants, {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 import * as Utils from 'utils/utils';
 
 import AddChannelDropdown from '../add_channel_dropdown';

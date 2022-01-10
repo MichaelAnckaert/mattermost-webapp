@@ -20,6 +20,7 @@ import FormattedMarkdownMessage from 'components/formatted_markdown_message.jsx'
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 import {t} from 'utils/i18n';
 import {localizeMessage} from 'utils/utils';
+import {TelemetryCategories} from 'utils/constants';
 
 import './marketplace_modal.scss';
 import MarketplaceList from './marketplace_list/marketplace_list';

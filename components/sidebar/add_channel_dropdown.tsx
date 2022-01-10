@@ -4,6 +4,7 @@
 import React from 'react';
 import {FormattedMessage, IntlShape, injectIntl} from 'react-intl';
 
+import {TelemetryCategories} from 'utils/constants';
 import {trackEvent} from 'actions/telemetry_actions';
 
 import MenuWrapper from 'components/widgets/menu/menu_wrapper';

@@ -19,7 +19,7 @@ import {trackEvent} from 'actions/telemetry_actions';
 
 import FormattedAdminHeader from 'components/widgets/admin_console/formatted_admin_header';
 
-import {AboutLinks, CloudLinks, ModalIdentifiers} from 'utils/constants';
+import {AboutLinks, CloudLinks, ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 
 import {ModalData} from 'types/actions';
 
@@ -37,7 +37,6 @@ import EELicenseModal from './modals/ee_license_modal';
 import ConfirmLicenseRemovalModal from './modals/confirm_license_removal_modal';
 
 import './license_settings.scss';
-import {TelemetryCategories} from 'utils/constants';
 
 type Props = {
     license: ClientLicense;

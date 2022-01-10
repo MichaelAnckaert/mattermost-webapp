@@ -19,7 +19,7 @@ import {ServerError} from 'mattermost-redux/types/errors';
 import ConfirmModal from 'components/confirm_modal';
 import BlockableLink from 'components/admin_console/blockable_link';
 import FormError from 'components/form_error';
-import Constants from 'utils/constants';
+import Constants, {TelemetryCategories} from 'utils/constants';
 import {browserHistory} from 'utils/browser_history';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 

@@ -15,7 +15,7 @@ import CopyUrlContextMenu from 'components/copy_url_context_menu';
 import OverlayTrigger from 'components/overlay_trigger';
 import Tooltip from 'components/tooltip';
 
-import Constants from 'utils/constants';
+import Constants, {TelemetryCategories} from 'utils/constants';
 import {wrapEmojis} from 'utils/emoji_utils';
 import {isDesktopApp} from 'utils/user_agent';
 import {cmdOrCtrlPressed, localizeMessage} from 'utils/utils';

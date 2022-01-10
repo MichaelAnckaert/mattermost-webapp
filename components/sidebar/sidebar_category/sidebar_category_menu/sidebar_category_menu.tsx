@@ -12,7 +12,7 @@ import DeleteCategoryModal from 'components/delete_category_modal';
 import EditCategoryModal from 'components/edit_category_modal';
 import SidebarMenu from 'components/sidebar/sidebar_menu';
 import Menu from 'components/widgets/menu/menu';
-import {ModalIdentifiers} from 'utils/constants';
+import {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 import {ModalData} from 'types/actions';
 import {Menu as SubMenu} from 'types/store/plugins';
 

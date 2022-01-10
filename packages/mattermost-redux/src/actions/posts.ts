@@ -2,6 +2,7 @@
 // See LICENSE.txt for license information.
 
 import {Client4, DEFAULT_LIMIT_AFTER, DEFAULT_LIMIT_BEFORE} from 'mattermost-redux/client';
+import {TelemetryCategories} from 'utils/constants';
 import {General, Preferences, Posts} from '../constants';
 import {PostTypes, ChannelTypes, FileTypes, IntegrationTypes} from 'mattermost-redux/action_types';
 

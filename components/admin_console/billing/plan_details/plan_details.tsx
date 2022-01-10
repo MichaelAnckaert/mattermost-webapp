@@ -10,7 +10,7 @@ import FormattedMarkdownMessage from 'components/formatted_markdown_message';
 import OverlayTrigger from 'components/overlay_trigger';
 import Tooltip from 'components/tooltip';
 import {getMonthLong} from 'utils/i18n';
-import {BillingSchemes, CloudLinks, CloudProducts} from 'utils/constants';
+import {BillingSchemes, CloudLinks, CloudProducts, TelemetryCategories} from 'utils/constants';
 import {localizeMessage} from 'utils/utils';
 
 import Badge from 'components/widgets/badges/badge';

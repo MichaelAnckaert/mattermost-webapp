@@ -8,7 +8,7 @@ import IconButton from '@mattermost/compass-components/components/icon-button';
 import {trackEvent} from 'actions/telemetry_actions';
 import * as Utils from 'utils/utils';
 import {browserHistory} from 'utils/browser_history';
-import Constants from 'utils/constants';
+import Constants, {TelemetryCategories} from 'utils/constants';
 import KeyboardShortcutSequence, {
     KEYBOARD_SHORTCUTS,
     KeyboardShortcutDescriptor,

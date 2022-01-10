@@ -12,7 +12,7 @@ import {sortFileInfos} from 'mattermost-redux/utils/file_utils';
 
 import * as GlobalActions from 'actions/global_actions';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
-import Constants, {StoragePrefixes, ModalIdentifiers, Locations, A11yClassNames} from 'utils/constants';
+import Constants, {StoragePrefixes, ModalIdentifiers, Locations, A11yClassNames, TelemetryCategories} from 'utils/constants';
 import {t} from 'utils/i18n';
 import {
     containsAtChannel,

@@ -11,7 +11,7 @@ import {MessageAttachment as MessageAttachmentType, MessageAttachmentField} from
 import {PostImage} from 'mattermost-redux/types/posts';
 
 import {isUrlSafe} from 'utils/url';
-import {Constants} from 'utils/constants';
+import {Constants, TelemetryCategories} from 'utils/constants';
 import * as Utils from 'utils/utils';
 import LinkOnlyRenderer from 'utils/markdown/link_only_renderer';
 import {TextFormattingOptions} from 'utils/text_formatting';

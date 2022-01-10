@@ -25,7 +25,7 @@ import {Post} from 'mattermost-redux/types/posts';
 
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 import {getSearchTerms, getRhsState, getPluggableId, getFilesSearchExtFilter} from 'selectors/rhs';
-import {ActionTypes, RHSStates, Constants} from 'utils/constants';
+import {ActionTypes, RHSStates, Constants, TelemetryCategories} from 'utils/constants';
 import * as Utils from 'utils/utils';
 import {getBrowserUtcOffset, getUtcOffsetForTimeZone} from 'utils/timezone';
 import {RhsState} from 'types/store/rhs';

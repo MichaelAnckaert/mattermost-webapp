@@ -691,7 +691,7 @@ export default class Client4 {
         );
     }
 
-    login = (loginId: string, password: string, token = '', deviceId = '', ldapOnly = false) => {
+    login = async (loginId: string, password: string, token = '', deviceId = '', ldapOnly = false) => {
         this.trackEvent(TelemetryCategories.API, 'api_users_login');
 
         if (ldapOnly) {

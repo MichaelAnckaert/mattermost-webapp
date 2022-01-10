@@ -3,6 +3,7 @@
 import {AdminTypes} from 'mattermost-redux/action_types';
 import {General} from '../constants';
 import {Client4} from 'mattermost-redux/client';
+import {TelemetryCategories} from 'utils/constants';
 
 import {Action, ActionFunc, batchActions, DispatchFunc, GetStateFunc} from 'mattermost-redux/types/actions';
 import {Compliance} from 'mattermost-redux/types/compliance';

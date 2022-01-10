@@ -12,7 +12,7 @@ import {WarnMetricStatus} from 'mattermost-redux/types/config';
 
 import {getSiteURL} from 'utils/url';
 import {t} from 'utils/i18n';
-import {Constants, ModalIdentifiers, WarnMetricTypes} from 'utils/constants';
+import {Constants, ModalIdentifiers, WarnMetricTypes, TelemetryCategories} from 'utils/constants';
 
 import {trackEvent} from 'actions/telemetry_actions';
 import * as AdminActions from 'actions/admin_actions.jsx';

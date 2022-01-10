@@ -17,7 +17,7 @@ import Pluggable from 'plugins/pluggable';
 
 import {ModalData} from 'types/actions';
 
-import Constants, {ModalIdentifiers} from 'utils/constants';
+import Constants, {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 import * as Utils from 'utils/utils';
 
 import KeyboardShortcutsModal from '../keyboard_shortcuts/keyboard_shortcuts_modal/keyboard_shortcuts_modal';

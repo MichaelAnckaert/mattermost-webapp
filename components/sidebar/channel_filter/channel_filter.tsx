@@ -8,6 +8,7 @@ import {trackEvent} from 'actions/telemetry_actions';
 import OverlayTrigger from 'components/overlay_trigger';
 import Tooltip from 'components/tooltip';
 import {localizeMessage} from 'utils/utils';
+import {TelemetryCategories} from 'utils/constants';
 
 type Props = {
     hasMultipleTeams: boolean;

@@ -15,7 +15,7 @@ import Menu from 'components/widgets/menu/menu';
 
 import {ModalData} from 'types/actions';
 
-import Constants, {ModalIdentifiers} from 'utils/constants';
+import Constants, {ModalIdentifiers, TelemetryCategories} from 'utils/constants';
 import {copyToClipboard} from 'utils/utils';
 
 type Props = {

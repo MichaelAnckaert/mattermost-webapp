@@ -11,6 +11,7 @@ import MarketplaceItem from '../marketplace_item';
 import LoadingWrapper from 'components/widgets/loading/loading_wrapper';
 
 import {localizeMessage} from 'utils/utils';
+import {TelemetryCategories} from 'utils/constants';
 
 export type MarketplaceItemAppProps = {
     id: string;

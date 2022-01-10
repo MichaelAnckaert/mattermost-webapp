@@ -12,7 +12,7 @@ import {debounce} from 'mattermost-redux/actions/helpers';
 import {browserHistory} from 'utils/browser_history';
 import {trackEvent} from 'actions/telemetry_actions.jsx';
 
-import {Constants} from 'utils/constants';
+import {Constants, TelemetryCategories} from 'utils/constants';
 import {isArchivedChannel} from 'utils/channel_utils';
 import DataGrid, {Row, Column} from 'components/admin_console/data_grid/data_grid';
 import {FilterOptions} from 'components/admin_console/filter/filter';
