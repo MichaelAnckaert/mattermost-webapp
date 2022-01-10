@@ -28,8 +28,8 @@ export default class SidebarBaseChannel extends React.PureComponent<Props> {
     }
 
     handleLeavePrivateChannel = () => {
-        trackEvent(TelemetryCategories.UI, 'ui_private_channel_x_button_clicked');
         this.props.actions.openModal({modalId: ModalIdentifiers.LEAVE_PRIVATE_CHANNEL_MODAL, dialogType: LeavePrivateChannelModal, dialogProps: {channel: this.props.channel}});
+        trackEvent(TelemetryCategories.UI, 'ui_private_channel_x_button_clicked');
     }
 
     getCloseHandler = () => {
